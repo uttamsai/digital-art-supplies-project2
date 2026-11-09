@@ -1,0 +1,10 @@
+.git
+node_modules
+**/node_modules
+client/dist
+.env
+.env.*
+work
+outputs
+server/tests
+server/seed

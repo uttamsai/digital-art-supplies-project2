@@ -1,0 +1,168 @@
+:root {
+  --rl-forest: #332a55;
+  --rl-forest-dark: #241d3d;
+  --rl-cream: #e7e1f5;
+  --rl-accent: #8a6fd4;
+  --rl-text: #2b2b30;
+}
+
+body {
+  color: var(--rl-text);
+  background-color: #fbfaf6;
+}
+
+a {
+  color: var(--rl-forest);
+}
+
+/* ---------- Navbar ---------- */
+#site-navbar {
+  background-color: var(--rl-forest);
+}
+
+#site-navbar .navbar-brand {
+  color: var(--rl-cream);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+/* "Digital Art Supplies" is longer than a typical one-word brand name, so
+   trim the size a bit at the width where it would otherwise crowd the nav
+   links (just above the collapse breakpoint). */
+@media (min-width: 992px) and (max-width: 1140px) {
+  #site-navbar .brand-text span {
+    font-size: 1.05rem;
+  }
+}
+
+#site-navbar .nav-link {
+  color: rgba(232, 223, 200, 0.85);
+}
+
+#site-navbar .nav-link:hover,
+#site-navbar .nav-link.active {
+  color: var(--rl-cream);
+}
+
+#site-navbar .navbar-toggler {
+  border-color: rgba(232, 223, 200, 0.4);
+}
+
+#site-navbar .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(232, 223, 200, 0.9)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* ---------- Hero ---------- */
+.hero-section {
+  background: linear-gradient(135deg, var(--rl-forest) 0%, var(--rl-forest-dark) 100%);
+}
+
+.hero-eyebrow {
+  color: var(--rl-accent);
+  letter-spacing: 0.08em;
+  font-size: 0.85rem;
+}
+
+.hero-art {
+  background-color: var(--rl-cream);
+  border-radius: 0.75rem;
+}
+
+/* ---------- Product cards ---------- */
+.product-card-link {
+  color: inherit;
+}
+
+.product-card {
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  border-color: rgba(0, 0, 0, 0.08);
+}
+
+.product-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.1) !important;
+}
+
+.product-card-img-wrap {
+  position: relative;
+}
+
+.product-card-img {
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  background-color: #f1f1ec;
+}
+
+.product-card-badges {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+}
+
+.rating {
+  color: var(--rl-accent);
+}
+
+/* ---------- Product detail ---------- */
+.product-detail-img {
+  background-color: #f1f1ec;
+}
+
+.spec-list li {
+  padding: 0.15rem 0;
+}
+
+.option-btn {
+  min-width: 2.75rem;
+}
+
+/* ---------- Cart ---------- */
+.cart-item-img {
+  width: 88px;
+  height: 66px;
+  object-fit: cover;
+  background-color: #f1f1ec;
+  flex-shrink: 0;
+}
+
+.quantity-value {
+  min-width: 1.5rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+.cart-summary-card {
+  position: sticky;
+  top: 5.5rem;
+}
+
+/* ---------- Footer ---------- */
+.site-footer {
+  background-color: var(--rl-forest-dark);
+  color: rgba(232, 223, 200, 0.85);
+}
+
+.footer-note {
+  color: rgba(232, 223, 200, 0.65);
+}
+
+.normal-case {
+  text-transform: none;
+  font-size: 0.75rem;
+}
+
+/* ---------- Small-screen adjustments ---------- */
+@media (max-width: 575.98px) {
+  .cart-item {
+    flex-wrap: wrap;
+  }
+
+  .cart-item-img {
+    width: 72px;
+    height: 54px;
+  }
+
+  .cart-summary-card {
+    position: static;
+  }
+}

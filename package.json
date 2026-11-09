@@ -1,0 +1,31 @@
+{
+  "name": "digital-art-supplies-project2",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace=client",
+    "dev:server": "node --env-file=.env server/server.js",
+    "build": "npm run build --workspace=client",
+    "start": "node --env-file-if-exists=.env server/server.js",
+    "seed": "node --env-file=.env server/seed/seedProducts.js",
+    "test": "node --test --test-concurrency=1 server/tests/*.test.js",
+    "lint": "oxlint client/src server",
+    "test:browser": "npm run build && playwright test",
+    "format": "prettier --write client/src server"
+  },
+  "engines": {
+    "node": ">=22.18.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.65.0",
+    "mongodb-memory-server": "^10.0.0",
+    "oxlint": "^1.81.0",
+    "prettier": "^3.9.10",
+    "supertest": "^7.0.0"
+  }
+}

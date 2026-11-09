@@ -1,0 +1,35 @@
+Requirement,Task,Assignee,Due date,Status
+Accounts,Review signup validation and duplicate checks,Unassigned,2026-11-12,Review pending
+Accounts,Demonstrate signup and password hashing,Unassigned,2026-11-12,Review pending
+Authentication,Review login session and logout handling,Unassigned,2026-11-12,Review pending
+Authentication,Test failed login and session restoration,Unassigned,2026-11-12,Review pending
+Profile,Review profile editing and field validation,Unassigned,2026-11-12,Review pending
+Profile,Verify email change preserves order ownership,Unassigned,2026-11-12,Review pending
+Database,Review products users orders and session schemas,Unassigned,2026-11-12,Review pending
+Database,Verify unique indexes and product seed,Unassigned,2026-11-12,Review pending
+Products,Review product list API integration,Unassigned,2026-11-12,Review pending
+Products,Verify individual product detail API and images,Unassigned,2026-11-12,Review pending
+Cart,Review session cart add update and delete,Unassigned,2026-11-12,Review pending
+Cart,Demonstrate refresh persistence and navigation count,Unassigned,2026-11-12,Review pending
+Checkout,Review shipping billing and demo payment form,Unassigned,2026-11-12,Review pending
+Checkout,Verify server prices stock and total calculations,Unassigned,2026-11-12,Review pending
+Orders,Review order insertion and cart clearing,Unassigned,2026-11-12,Review pending
+Orders,Demonstrate confirmation history and private details,Unassigned,2026-11-12,Review pending
+Architecture,Review client/server folders and controllers,Unassigned,2026-11-12,Review pending
+Architecture,Review startup connection reuse and shutdown,Unassigned,2026-11-12,Review pending
+Validation,Test invalid input and duplicate identities,Unassigned,2026-11-12,Review pending
+Validation,Test price tampering and order access restrictions,Unassigned,2026-11-12,Review pending
+Quality,Review comments naming and reusable helpers,Unassigned,2026-11-12,Review pending
+Quality,Run API browser lint and build checks,Unassigned,2026-11-12,Review pending
+Cloud,Verify one Cloud Run service serves client and API,Unassigned,2026-11-12,Review pending
+Cloud,Verify secret access sessions and Atlas connectivity,Unassigned,2026-11-12,Review pending
+Documentation,Review README and group member details,Unassigned,2026-11-12,Review pending
+Documentation,Publish and verify GitHub Pages code documentation,Unassigned,2026-11-12,Review pending
+Project management,Assign individual issue owners and due dates,Unassigned,2026-11-12,Review pending
+Project management,Update board during the group meeting,Unassigned,2026-11-12,Review pending
+Wiki demos,Record signup database before and after,Unassigned,2026-11-12,Review pending
+Wiki demos,Record shopping and cart refresh demo,Unassigned,2026-11-12,Review pending
+Wiki demos,Record checkout forms and order database before and after,Unassigned,2026-11-12,Review pending
+Wiki demos,Publish Wiki pages with video links,Unassigned,2026-11-12,Review pending
+Submission,Verify GitHub and Cloud Run submission URLs,Unassigned,2026-11-12,Review pending
+Submission,Review Canvas rubric and prepare class presentation,Unassigned,2026-11-12,Review pending

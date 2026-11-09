@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 260" width="400" height="260">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#eef1f6"/>
+      <stop offset="100%" stop-color="#d6dceb"/>
+    </linearGradient>
+    <linearGradient id="bodyGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#232323"/>
+      <stop offset="100%" stop-color="#232323" stop-opacity="0.86"/>
+    </linearGradient>
+    <linearGradient id="screenGlow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2c5f8a" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#2c5f8a" stop-opacity="0.06"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="260" fill="url(#bg)"/>
+
+  <!-- tablet body -->
+  <g transform="translate(15,20)">
+    <rect x="0" y="0" width="320" height="200" rx="18" fill="url(#bodyGrad)" stroke="rgba(0,0,0,0.18)" stroke-width="2"/>
+    <circle cx="290" cy="20" r="4" fill="#ffffff" fill-opacity="0.5"/>
+    
+    <rect x="34" y="24" width="252" height="152" rx="10" fill="#1f2226" opacity="0.18"/>
+    <path d="M60,50 L260,150" stroke="#2c5f8a" stroke-width="3" stroke-opacity="0.35" stroke-linecap="round"/>
+    <path d="M60,90 L220,50" stroke="#2c5f8a" stroke-width="3" stroke-opacity="0.25" stroke-linecap="round"/>
+    
+    <!-- express-key dots along the left edge -->
+    <g fill="#ffffff" fill-opacity="0.45">
+      <circle cx="16" cy="60" r="4"/>
+      <circle cx="16" cy="80" r="4"/>
+      <circle cx="16" cy="100" r="4"/>
+      <circle cx="16" cy="120" r="4"/>
+    </g>
+  </g>
+
+  <!-- stylus resting diagonally across the tablet -->
+  <g transform="translate(230,175) rotate(-32)">
+    <rect x="0" y="0" width="130" height="14" rx="7" fill="#2b2b2b"/>
+    <rect x="0" y="0" width="18" height="14" rx="7" fill="#2c5f8a"/>
+    <circle cx="132" cy="7" r="4" fill="#111111"/>
+  </g>
+</svg>
