@@ -8,6 +8,12 @@ This project extends the original React Digital Art Supplies storefront with Exp
 - [Video demonstration guide](demo-guide.html)
 - [Requirements checklist](requirements.html)
 
+## Published application
+
+[Open the live store](https://digital-art-supplies-project2-1183981126.us-west1.run.app) · [View the public repository](https://github.com/uttamsai/digital-art-supplies-project2)
+
+The temporary Atlas demo network rule expires November 16, 2026 at 7:37 AM Pacific. Database features require renewed or restricted network access after that time.
+
 ## How a request works
 
 1. A React page calls `api()` with a relative `/api` URL.

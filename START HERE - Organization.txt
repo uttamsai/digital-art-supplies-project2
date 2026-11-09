@@ -28,8 +28,13 @@ Verification: eight API integration tests passed; browser signup/cart/refresh/lo
 checkout/edit profile/order history/logout flow passed. Desktop/mobile screenshots
 are under work. Tests use temporary MongoDB, not the class Atlas database.
 
-Remaining external setup:
-- Cloud build succeeded, but the first Cloud Run revision cannot reach Atlas
-  (MongoServerSelectionError). Atlas sign-in/network access review is pending.
-- GitHub publication awaits public/private choice.
-- Teammates' GitHub handles, issue assignments, recordings, and Canvas work remain.
+Published website: https://digital-art-supplies-project2-1183981126.us-west1.run.app
+Public repository: https://github.com/uttamsai/digital-art-supplies-project2
+Documentation: https://uttamsai.github.io/digital-art-supplies-project2/
+
+Cloud Run website, Atlas product APIs, secure cookies, and persistent cart verified.
+Temporary Atlas demo access expires November 16, 2026 at 7:37 AM Pacific.
+
+Remaining group work:
+- Teammates' GitHub handles and individual issue assignments.
+- Demonstration recordings, Wiki video links, and Canvas submission.

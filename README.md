@@ -66,9 +66,15 @@ npm run test:browser
 
 Tests use an isolated temporary MongoDB process, not Atlas. The API suite checks duplicate identities, hashing, session isolation, cart validation, price tampering, order ownership, and malformed requests. The browser test creates a fictional account, shops, refreshes, logs in, checks out, edits email, views orders, and logs out. Screenshots go to ignored `work/`.
 
-## Current setup status
+## Published links and verified status
 
-The first Cloud Run container build passed, but its revision cannot start because Atlas connection attempts time out (`MongoServerSelectionError`). Atlas Network Access must be reviewed after signing in. No working public Project 2 URL is claimed yet. GitHub publication is awaiting the repository visibility decision.
+- [Live Cloud Run website](https://digital-art-supplies-project2-1183981126.us-west1.run.app)
+- [Public group repository](https://github.com/uttamsai/digital-art-supplies-project2)
+- [GitHub Pages documentation](https://uttamsai.github.io/digital-art-supplies-project2/)
+
+Cloud Run is deployed and connected to Atlas. Live checks passed for the website, all 28 products, individual product reads, secure session cookies, cart persistence/removal, and blocked anonymous order access. Test cart data was cleared. No customer accounts or orders were created during deployment verification.
+
+The approved temporary Atlas network rule expires **November 16, 2026 at 7:37 AM Pacific** (15:37 UTC). Cloud Run database access requires renewing that rule or configuring restricted static outbound networking before it expires.
 
 ## Cloud Run deployment
 

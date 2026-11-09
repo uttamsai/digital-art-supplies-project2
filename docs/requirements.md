@@ -16,10 +16,10 @@
 | Order confirmation/history/details | OrderView, OrdersView | Browser tested |
 | Private user order access | userId filter on every order read | API tested |
 | Shared database client and shutdown cleanup | database.js and server.js | Implemented |
-| One Cloud Run service for website/API | Dockerfile, deploy.ps1 | Cloud build passed; Atlas connection timeout blocks startup |
-| New group repository | local repository prepared | Visibility awaiting user decision |
+| One Cloud Run service for website/API | Dockerfile, deploy.ps1 | Deployed; live website, product APIs, and cart session verified |
+| New group repository | Public GitHub repository | Published |
 | README/group members/build/deployment | README.md | Prepared |
-| GitHub Pages documentation | docs/ | Publication pending repository |
+| GitHub Pages documentation | docs/ | Published through GitHub Pages |
 | Issue board, individual assignees and due dates | docs/task-plan.csv | GitHub usernames and assignment decisions needed |
 | Wiki and demonstration recordings | docs/demo-guide.md | Recordings and YouTube URLs still needed |
 | Canvas submission/rubric/peer reviews | External coursework | Group must complete |
