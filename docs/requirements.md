@@ -16,7 +16,7 @@
 | Order confirmation/history/details | OrderView, OrdersView | Browser tested |
 | Private user order access | userId filter on every order read | API tested |
 | Shared database client and shutdown cleanup | database.js and server.js | Implemented |
-| One Cloud Run service for website/API | Dockerfile, deploy.ps1 | Deployment verification in progress |
+| One Cloud Run service for website/API | Dockerfile, deploy.ps1 | Cloud build passed; Atlas connection timeout blocks startup |
 | New group repository | local repository prepared | Visibility awaiting user decision |
 | README/group members/build/deployment | README.md | Prepared |
 | GitHub Pages documentation | docs/ | Publication pending repository |

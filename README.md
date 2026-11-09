@@ -66,6 +66,10 @@ npm run test:browser
 
 Tests use an isolated temporary MongoDB process, not Atlas. The API suite checks duplicate identities, hashing, session isolation, cart validation, price tampering, order ownership, and malformed requests. The browser test creates a fictional account, shops, refreshes, logs in, checks out, edits email, views orders, and logs out. Screenshots go to ignored `work/`.
 
+## Current setup status
+
+The first Cloud Run container build passed, but its revision cannot start because Atlas connection attempts time out (`MongoServerSelectionError`). Atlas Network Access must be reviewed after signing in. No working public Project 2 URL is claimed yet. GitHub publication is awaiting the repository visibility decision.
+
 ## Cloud Run deployment
 
 The Dockerfile builds React with Vite and serves its output with Express. One service handles the website and `/api`; MongoDB remains in Atlas. Use `deploy.ps1` from the repository root. The script builds locally before submitting the source to Cloud Run.

@@ -1,0 +1,35 @@
+Digital Art Supplies - Project 2
+
+Workspace: D:\2 - Projects\digital-art-supplies-project2
+
+Original Lab10 project remains at:
+C:\Users\uttam\OneDrive\Desktop\Work - School Stuff\CS-351\digital-art-supplies-lab10
+
+Start here: README.md
+Code explanations: docs\code-notes.md
+Recording steps: docs\demo-guide.md
+Requirement status: docs\requirements.md
+Group task draft: docs\task-plan.csv
+
+Run from this folder:
+  npm run build
+  npm start
+Then open http://localhost:8080
+
+The root .env is private and ignored by Git and deployment uploads.
+Atlas database: digital_art_supplies_project2
+Products: 28; customer accounts and orders have intentionally not been seeded.
+
+Implementation: accounts, login/logout, account editing, catalog API, session cart,
+checkout, order confirmation/history/details, shared database connection, and
+single-service Cloud Run packaging are implemented.
+
+Verification: eight API integration tests passed; browser signup/cart/refresh/login/
+checkout/edit profile/order history/logout flow passed. Desktop/mobile screenshots
+are under work. Tests use temporary MongoDB, not the class Atlas database.
+
+Remaining external setup:
+- Cloud build succeeded, but the first Cloud Run revision cannot reach Atlas
+  (MongoServerSelectionError). Atlas sign-in/network access review is pending.
+- GitHub publication awaits public/private choice.
+- Teammates' GitHub handles, issue assignments, recordings, and Canvas work remain.
