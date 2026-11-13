@@ -86,19 +86,3 @@ Runtime identity: `digital-art-project2@my-resume-506923.iam.gserviceaccount.com
 Secret mappings: `MONGODB_URI` from `digital-art-supplies-mongodb-uri`; `SESSION_SECRET` from `digital-art-supplies-project2-session`. The service identity needs Secret Accessor on these two secrets. No secret values belong in source control or the client bundle.
 
 Atlas must allow connections from Cloud Run. Do not assume an expired temporary IP rule still works. Check `/health` and `/api/products` after deployment. Cloud Run uses secure, HttpOnly session cookies in production. Instances share session storage through MongoDB.
-
-## Original work and additions
-
-This project is a separate copy of the existing Digital Art Supplies Lab10 app. The original Lab10 directory and deployment are retained. Existing product cards, product lists, navigation, images, cart presentation, and styling were reused. Account forms and cart handlers now call the APIs; account management, checkout, and order pages were added with approval.
-
-The instructor's `grewe/FormDataSaveMongoDB` sample taught the form → Express → MongoDB flow. This backend extends that approach; it is not an unchanged copy of the instructor's EJS application. The Project 2 frontend remains React.
-
-## Submission checklist
-
-- Confirm the Cloud Run website and Atlas data in your own browser.
-- Supply teammates' GitHub usernames and accept repository invitations.
-- Assign issue-board tasks to individual members and maintain their due dates/status.
-- Record signup (Atlas before/after), shopping/cart, and checkout/orders demos.
-- Add the YouTube links and screenshots to the repository Wiki.
-- Submit the GitHub and Cloud Run URLs by November 13 at the start of class.
-- Complete peer reviews by November 20; consult the Canvas rubric separately.
