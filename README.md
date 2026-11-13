@@ -18,7 +18,7 @@ A React storefront backed by Node.js, Express, and MongoDB Atlas. Customers can 
 - `server/routes/`: HTTP routes connected to controllers.
 - `server/seed/catalog.json`: one-time product import source; never loaded by the storefront.
 - `server/tests/`: API and browser tests using a temporary local MongoDB instance.
-- `docs/`: architecture, code notes, and presentation guidance.
+- `docs/`: architecture, API documentation, and function reference.
 
 The React application has no local products.json. Both the product list and individual product page fetch MongoDB-backed APIs.
 

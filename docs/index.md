@@ -2,17 +2,13 @@
 
 CS351 Project 2 by Uttam Sai Nalla, Giang Nguyen, and Filip Rerek.
 
-This project extends the original React Digital Art Supplies storefront with Express, MongoDB Atlas, account sessions, a persistent cart, and simulated checkout. One Cloud Run service hosts the client and API.
+Digital Art Supplies is a React storefront with Express, MongoDB Atlas, account sessions, a persistent cart, and simulated checkout. One Cloud Run service hosts the client and API.
 
-- [Code and function notes](code-notes.html)
-- [Video demonstration guide](demo-guide.html)
-- [Requirements checklist](requirements.html)
+- [Code and function reference](code-notes.html)
 
 ## Published application
 
 [Open the live store](https://digital-art-supplies-project2-1183981126.us-west1.run.app) · [View the public repository](https://github.com/uttamsai/digital-art-supplies-project2)
-
-The temporary Atlas demo network rule expires November 16, 2026 at 7:37 AM Pacific. Database features require renewed or restricted network access after that time.
 
 ## How a request works
 
@@ -48,17 +44,17 @@ The frontend never connects directly to Atlas and never receives the Atlas conne
 | GET | /api/orders/quote | Preview current server totals |
 | POST / GET | /api/orders | Place order / read own history |
 | GET | /api/orders/:id | Read own saved order |
-| GET | /api/customers | List public login names for the earlier lab feature |
+| GET | /api/customers | List public login names |
 
 ## Run and test
 
-Use Node.js 22.18+. Run `npm ci`, configure the private root `.env` from `.env.example`, and run `npm run seed`, `npm run build`, and `npm start`. Open localhost:8080. See the repository README for the two-terminal development setup and Cloud Run deployment.
+Use Node.js 22.18+. Run `npm ci`, configure the private root `.env` from `.env.example`, and run `npm run seed`, `npm run build`, and `npm start`. Open localhost:8080. See the repository README for the two-terminal development setup.
 
 `npm test` runs database/API tests. `npm run test:browser` runs the full browser flow against a temporary database. Test customers never enter the Atlas class database.
 
 ## Design decisions
 
-Existing Bootstrap styles, navigation, cards, images, and cart components are reused. New account and checkout pages use the same form/card conventions.
+The frontend uses Bootstrap styles and shared navigation, product cards, cart components, and form components.
 
 The server owns prices, stock checks, totals, and the cart. React state is only a display copy. Orders are linked by MongoDB `_id`, so email changes do not break history. A unique checkout reference prevents retrying the same submission from inserting the same order twice.
 

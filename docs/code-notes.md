@@ -1,4 +1,4 @@
-# Code explanation notes
+# Code and function reference
 
 ## Browser → server → database
 
@@ -32,15 +32,3 @@ The React pages call `api()` in `client/src/utils/api.js`. It uses `fetch('/api/
 - `utils/session.js`: waits for session saves/regeneration before responding.
 - `routes/`: maps HTTP verbs and paths to controller functions.
 - `seed/seedProducts.js`: one-time catalog import, with no automatic account creation.
-
-## Short answers for class
-
-“The cart is stored twice for different purposes: React state draws it, while the Express session is the authoritative copy that survives refresh.”
-
-“MongoDB `_id` identifies the user. Changing email does not detach their orders.”
-
-“Passwords are bcrypt hashes. Login compares a submitted password to the hash; it does not decrypt it.”
-
-“The server looks up product prices again. Changing a price in the browser cannot change the charged demo total.”
-
-“One Cloud Run service serves React and the APIs, so the client uses relative URLs and never sees the Atlas credential.”
